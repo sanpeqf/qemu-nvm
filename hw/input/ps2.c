@@ -1178,7 +1178,7 @@ static const VMStateDescription vmstate_ps2_mouse = {
 };
 
 static QemuInputHandler ps2_keyboard_handler = {
-    .name  = "QEMU PS/2 Keyboard",
+    .name  = "INTE PS/2 Keyboard",
     .mask  = INPUT_EVENT_MASK_KEY,
     .event = ps2_keyboard_event,
 };
@@ -1199,7 +1199,7 @@ void *ps2_kbd_init(void (*update_irq)(void *, int), void *update_arg)
 }
 
 static QemuInputHandler ps2_mouse_handler = {
-    .name  = "QEMU PS/2 Mouse",
+    .name  = "INTE PS/2 Mouse",
     .mask  = INPUT_EVENT_MASK_BTN | INPUT_EVENT_MASK_REL,
     .event = ps2_mouse_event,
     .sync  = ps2_mouse_sync,

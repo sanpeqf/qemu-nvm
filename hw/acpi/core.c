@@ -55,9 +55,9 @@ struct acpi_table_header {
 #define ACPI_TABLE_PFX_SIZE sizeof(uint16_t)  /* size of the extra prefix */
 
 static const char unsigned dfl_hdr[ACPI_TABLE_HDR_SIZE - ACPI_TABLE_PFX_SIZE] =
-    "QEMU\0\0\0\0\1\0"       /* sig (4), len(4), revno (1), csum (1) */
-    "QEMUQEQEMUQEMU\1\0\0\0" /* OEM id (6), table (8), revno (4) */
-    "QEMU\1\0\0\0"           /* ASL compiler ID (4), version (4) */
+    "INTE\0\0\0\0\1\0"       /* sig (4), len(4), revno (1), csum (1) */
+    "INTELLLLLLLLLL\1\0\0\0" /* OEM id (6), table (8), revno (4) */
+    "INTE\1\0\0\0"           /* ASL compiler ID (4), version (4) */
     ;
 
 char unsigned *acpi_tables;

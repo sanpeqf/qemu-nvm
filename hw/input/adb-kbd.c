@@ -356,7 +356,7 @@ static void adb_kbd_reset(DeviceState *dev)
 }
 
 static QemuInputHandler adb_keyboard_handler = {
-    .name  = "QEMU ADB Keyboard",
+    .name  = "INTE ADB Keyboard",
     .mask  = INPUT_EVENT_MASK_KEY,
     .event = adb_keyboard_event,
 };

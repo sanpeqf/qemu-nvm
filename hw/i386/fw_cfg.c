@@ -198,7 +198,7 @@ void fw_cfg_add_acpi_dsdt(Aml *scope, FWCfgState *fw_cfg)
     Aml *dev = aml_device("FWCF");
     Aml *crs = aml_resource_template();
 
-    aml_append(dev, aml_name_decl("_HID", aml_string("QEMU0002")));
+    aml_append(dev, aml_name_decl("_HID", aml_string("INTE0002")));
 
     /* device present, functioning, decoding, not shown in UI */
     aml_append(dev, aml_name_decl("_STA", aml_int(0xB)));
